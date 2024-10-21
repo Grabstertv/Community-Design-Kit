@@ -2,14 +2,14 @@
 
 # How to Use
 You have two options:
-1. **Download Entire Repository**: Click `Code > Download ZIP` to keep a local copy. Note that new additions won't be reflected unless you download again.
-2. **(Recommended)**: Use [GitHub Desktop](https://desktop.github.com/download/) to [clone the repository](https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop). This way, you can easily update by clicking "Pull origin" when new assets are added.
+1. **(Recommended)**: Use [GitHub Desktop](https://desktop.github.com/download/) to [clone the repository](https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop). This way, you can easily update by clicking "Pull origin" when new assets are available for download.
+2. **Download Entire Repository**: Click `Code > Download ZIP` to keep a local copy. Note that new additions won't be reflected unless you download again.
 
 # How to Contribute
-To contribute, submit a pull request for any additions or fixes. Follow these guidelines:
+To contribute, clone the [clone the repository](https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop) and [follow these steps](https://docs.github.com/en/desktop/working-with-your-remote-repository-on-github-or-github-enterprise/creating-an-issue-or-pull-request-from-github-desktop#creating-a-pull-request) to submit a pull request. Your pull request will be accepted based on the follow these guidelines to keep things organized:
 
 ### File Naming Convention
-Use the following naming structure for new assets for searchability:
+Use the following naming structure for your files. This ensures efficient searchability for everyone and saves a lot of time.
 
 ```
 Object/Shape - Action/Direction (Style/Type) {Size,Additional Info}
@@ -30,7 +30,7 @@ Michael - Front facing (GTA V) {Transparent}
 - **No maximum size** has been set yet to optimize storage, but avoid excessively large files.
 
 ### Upscaled Images
-If you're submitting upscaled images, ensure they are free of artifacts. You can use tools like [Upscayl](https://upscayl.org/), but ensure the correct model is applied.
+If you're submitting upscaled images, ensure they are free of artifacts. You can use tools like Upscayl, but ensure the correct model is applied.
 
 ### Recommended Resources for Upscaling:
 - [Upscayl](https://upscayl.org/): Free multi-platform AI upscaler.
