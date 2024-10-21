@@ -13,11 +13,15 @@ To contribute, submit a pull request for any additions or fixes. Follow these gu
 ### File Naming Convention
 Use the following naming structure for new assets:
 
+```
 Object/Shape - Action/Direction (Style) {Color/Size/Version} - Optional Info
+```
 
 **Example**: A red arrow pointing 90° in a thin illustrated style would be named:
 
+```
 Arrow - Right Bottom (Thin) {Red} - Illustrated
+```
 
 ### Image Resolution
 - **Minimum size**: 500px for non-SVG images.
