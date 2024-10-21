@@ -9,16 +9,20 @@ You have two options:
 To contribute, submit a pull request for any additions or fixes. Follow these guidelines:
 
 ### File Naming Convention
-Use the following naming structure for new assets:
+Use the following naming structure for new assets for searchability:
 
 ```
-Object/Shape - Action/Direction (Style) {Color/Size/Version} - Optional Info
+Object/Shape - Action/Direction (Style/Type) {Size,Additional Info}
 ```
 
-**Example**: A red arrow pointing 90° in a thin illustrated style would be named:
+**Example 1**: A red arrow pointing 90° in a thin illustrated style would be named:
 
 ```
-Arrow - Right Bottom (Thin) {Red} - Illustrated
+Arrow - Right Bottom (Thin) {Red, Illustrated}
+```
+**Example 2**: Front facing Michael from GTA V with transparency.
+```
+Michael - Front facing (GTA V) {Transparent}
 ```
 
 ### Image Resolution
