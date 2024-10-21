@@ -22,7 +22,7 @@ Arrow - Right Bottom (Thin) {Red} - Illustrated
 ```
 
 ### Image Resolution
-- **Minimum size**: 500px for non-SVG images.
+- **Minimum size**: Keep file sizes above 200px to ensure possible upscaling. Icons or Emojis should be in SVGs where possible.
 - **No maximum size** has been set yet to optimize storage, but avoid excessively large files.
 
 ### Upscaled Images
