@@ -36,10 +36,10 @@ If you're submitting upscaled images, ensure they are free of artifacts. You can
 - [Upscayl](https://upscayl.org/): Free multi-platform AI upscaler.
 - [Restoring Ruined Screenshots](https://youtu.be/5t6h2AhhSO8?si=wNqq8DSq5KvFmn29): A detailed tutorial by Taran Van Hemert.
 
-## Folder Structure
+### Folder Structure
 There is no set folder structure currently. However, if a category exceeds 10 files (e.g., emojis), create a folder that describes the type within its relevant parent folder.
 
-## PNG Padding
+### PNG Padding
 Ensure that PNG files are free of unnecessary padding or empty space around the visible content to avoid cropping issues.
 
 # Copyright
