@@ -1,4 +1,4 @@
-**Community Design Kit** is a community-driven resource repository containing high-resolution design assets. Each asset follows a basic naming convention and is organized for easy use by designers.
+**Community Design Kit** is a community-driven resource repository containing high-resolution design assets. Each asset follows a basic naming convention and is organized for easy use by artists.
 
 # How to Use
 You have two options:
