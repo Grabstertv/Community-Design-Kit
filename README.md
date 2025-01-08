@@ -9,7 +9,7 @@ You have two options:
 To contribute, clone the [clone the repository](https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop) and [follow these steps](https://docs.github.com/en/desktop/working-with-your-remote-repository-on-github-or-github-enterprise/creating-an-issue-or-pull-request-from-github-desktop#creating-a-pull-request) to submit a pull request. Your pull request will be accepted based on the follow these guidelines to keep things organized:
 
 ### File Naming Convention
-Use the following naming structure for your files. This ensures efficient searchability for everyone and saves a lot of time.
+While not a strict requirement, using the following naming structure for your files will ensure efficient searchability for everyone.
 
 ```
 Object/Shape - Action/Direction (Style/Type) {Size,Additional Info}
@@ -42,5 +42,8 @@ There is no set folder structure currently. However, if a category exceeds 10 fi
 ### PNG Padding
 Ensure that PNG files are free of unnecessary padding or empty space around the visible content to avoid cropping issues.
 
+### Licensing
+Keep copyright laws in mind when contributing. Make sure any assets you contribute are allowed to be shared and used publicly.
+
 # Copyright
-All logos and assets belong to their respective owners. Contributors do not claim ownership over any content added to the repository.
+All logos and assets belong to their respective owners. Owner of this repository and contributors do not claim ownership over any content added to the repository.
