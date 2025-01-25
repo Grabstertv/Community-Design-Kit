@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic File Browser</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <style>
+    img {
+      max-height: 150px;
+      max-width: 150px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <div class="container mx-auto p-4">
+    <h1 class="text-2xl font-bold mb-4">Dynamic File Browser</h1>
+    <input
+      type="text"
+      id="search"
+      placeholder="Search files..."
+      class="w-full p-2 mb-4 border rounded"
+    />
+
+    <!-- File List -->
+    <div id="fileList" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"></div>
+  </div>
+
+  <script>
+    // Function to fetch directory content
+    async function fetchFiles(path = '') {
+      try {
+        const response = await fetch(path || window.location.href); // Fetch current directory or subfolder
+        const text = await response.text();
+
+        // Parse the directory listing from server response
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(text, "text/html");
+        const links = Array.from(doc.querySelectorAll("a"));
+
+        // Prepare files and folders
+        const files = links
+          .map(link => link.getAttribute("href"))
+          .filter(href => href !== "../"); // Ignore parent directory link
+
+        renderFiles(files, path);
+      } catch (error) {
+        console.error("Error fetching files:", error);
+      }
+    }
+
+    // Function to render files and folders
+    function renderFiles(files, currentPath) {
+      const fileList = document.getElementById("fileList");
+      fileList.innerHTML = ""; // Clear previous content
+
+      files.forEach(file => {
+        const isFolder = file.endsWith("/"); // Check if it's a folder
+        const isImage = /\.(jpg|jpeg|png|gif|svg)$/i.test(file);
+
+        const card = document.createElement("div");
+        card.className = "p-4 bg-white rounded shadow";
+
+        if (isFolder) {
+          // Folder
+          card.innerHTML = `
+            <div class="font-bold text-blue-500 cursor-pointer">${file}</div>
+          `;
+          card.onclick = () => fetchFiles(currentPath + file);
+        } else if (isImage) {
+          // Image file
+          card.innerHTML = `
+            <img src="${currentPath + file}" alt="${file}" class="mb-2 rounded" />
+            <div>${file}</div>
+            <a href="${currentPath + file}" download class="text-blue-500">Download</a>
+          `;
+        } else {
+          // Other files
+          card.innerHTML = `
+            <div>${file}</div>
+            <a href="${currentPath + file}" download class="text-blue-500">Download</a>
+          `;
+        }
+
+        fileList.appendChild(card);
+      });
+    }
+
+    // Search functionality
+    document.getElementById("search").addEventListener("input", function () {
+      const query = this.value.toLowerCase();
+      const cards = Array.from(document.getElementById("fileList").children);
+
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(query) ? "block" : "none";
+      });
+    });
+
+    // Initial fetch
+    fetchFiles();
+  </script>
+</body>
+</html>
