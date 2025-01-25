@@ -35,12 +35,15 @@ If you're submitting upscaled images, ensure they are free of artifacts. You can
 ### Recommended Resources for Upscaling:
 - [Upscayl](https://upscayl.org/): Free multi-platform AI upscaler.
 - [Restoring Ruined Screenshots](https://youtu.be/5t6h2AhhSO8?si=wNqq8DSq5KvFmn29): A detailed tutorial by Taran Van Hemert.
+- [OpenArt's Ultimate Upscale](https://openart.ai/apps/creative-upscale): Paid service. Great for upscaling images of people or faces.
 
 ### Folder Structure
 There is no set folder structure currently. However, if a category exceeds 10 files (e.g., emojis), create a folder that describes the type within its relevant parent folder.
 
 ### PNG Padding
-Ensure that PNG files are free of unnecessary padding or empty space around the visible content to avoid cropping issues.
+Ensure that PNG files are free of unnecessary padding or empty space around the visible content to avoid cropping issues. In Photoshop, you can use Image > Trim after cutting your subject out from the background.
+### Background Removal Resource:
+- [BG Bye](https://bgbye.fyrean.com/): An AI driven web-based background remover. Does a good job with good contrasting images.
 
 ### Licensing
 Keep copyright laws in mind when contributing. Make sure any assets you contribute are allowed to be shared and used publicly.
